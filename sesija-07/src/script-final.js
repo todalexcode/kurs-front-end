@@ -4,7 +4,7 @@ function printFullAge(years) {
     var fullAges = [];
     
     for (var i = 0; i < years.length; i++) {
-        ages[i] = 2016 - years[i];
+        ages[i] = 2018 - years[i];
     }
 
     for (i = 0; i < ages.length; i++) {
