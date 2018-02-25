@@ -71,13 +71,15 @@
 for (var i = 0; i < 10; i++) {
     console.log("for loop: "+ i);
 }
+*/
+
 
 var i = 0;
 while(i < 10){
     console.log("while loop: " + i);
     i++;
 }
-*/
+
 
 /*
 0, true, print 0, update i to 1
@@ -160,6 +162,7 @@ var yearsForInput = [1966, 1936, 1998, 2001, 2008];
 function printFullAges(years){
     var ages =[];
     var fullAges = [];
+    console.log(yearsForInput);
     //idem kroz ulazni niz od pocetka do kraja
     for(var i= 0; i < years.length; i++){
         //formiran novi niz, koji je bio prazan na pocetku funkcije!
