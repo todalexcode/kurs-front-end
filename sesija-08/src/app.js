@@ -5,12 +5,12 @@ function printNumber(number) {
 
     //2. Setujem innerHTML property
     square.innerHTML = number;
-  }
+}
   
   //dodeljujem promenljivoj vrednost objekta 
   var button = document.getElementById('button');
   
-  //definsem onclick
+  //definisem onclick
   button.onclick = function() {
     var result = dice.roll();
     printNumber(result);

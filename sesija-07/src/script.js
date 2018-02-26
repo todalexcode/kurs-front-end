@@ -158,7 +158,7 @@ You can also use the specific array methods.
 
 
 var yearsForInput = [1966, 1936, 1998, 2001, 2008];
-
+/*
 function printFullAges(years){
     var ages =[];
     var fullAges = [];
@@ -182,9 +182,38 @@ function printFullAges(years){
 
     return fullAges;
 }
+*/
+
+//domaci - resenje - hint
+
+function printFullAges(years){
+    var ages =[];
+    var fullAges = [];
+    console.log(yearsForInput);
+    //idem kroz ulazni niz od pocetka do kraja
+    for(var i= 0; i < years.length; i++){
+        //formiran novi niz, koji je bio prazan na pocetku funkcije!
+        ages[i] = 2018 - years[i];
+    }
+    
+    for(var i= 0; i < ages.length; i++){
+        var person = {};
+        person.age = ages[i];
+        if(ages[i] >= 18){
+            person.isFullAge = true;
+        }
+        else{
+            person.isFullAge = false;
+        }
+        fullAges[i] = person;
+    }
+
+    return fullAges;
+}
+
 
 //var full_1 = printFullAges(yearsForInput);
-var full_2 = printFullAges([2016, 2014, 1936, 1966, 1986, 2017]);
+//var full_2 = printFullAges([2016, 2014, 1936, 1966, 1986, 2017]);
 
 //za domaci, vratiti iz funkcije NIZ OBJEKATA tipa:
 // var person = {
@@ -193,6 +222,4 @@ var full_2 = printFullAges([2016, 2014, 1936, 1966, 1986, 2017]);
 //}
 
 //testiranje:
-// var full_3 = = printFullAges([2016, 2014, 1936, 1966, 1986, 2017]);
-// full_3[0].age
-// full_3[0].isFullAge
+ var full_3 = printFullAges([2016, 2014, 1936, 1966, 1986, 2017]);
