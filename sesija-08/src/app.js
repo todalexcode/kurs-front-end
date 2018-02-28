@@ -1,10 +1,12 @@
 function printNumber(number) {
     
     //1. Uzimam element iz HTML
-    var square = document.getElementById("square");
+    // var square = document.getElementById("square");
+    var pic = document.getElementById("pic");
 
     //2. Setujem innerHTML property
-    square.innerHTML = number;
+    // square.innerHTML = number;
+    pic.src = 'dice-' + number + '.png';
 }
   
   //dodeljujem promenljivoj vrednost objekta 

@@ -33,13 +33,13 @@ console.log(suma);
 */
 
 
-var arrayOfNums = [3000, 1,2,100,3, 1200];
+var arrayOfNums = [3000, 1, 2, 100, 3, 1200];
 
-function maxArrayMember(arrayOfNums){
+function maxArrayMember(arrayOfNums) {
     var max;
     max = arrayOfNums[0];
-    for(var i = 1; i < arrayOfNums.length; i++ ){
-        if(arrayOfNums[i] > max){
+    for (var i = 1; i < arrayOfNums.length; i++) {
+        if (arrayOfNums[i] > max) {
             max = arrayOfNums[i];
         }
     }
@@ -51,21 +51,41 @@ console.log(myMax);
 
 
 
-function minNiza (nizBrojeva){
+function minNiza(nizBrojeva) {
 
     var min;
 
-    min =niz[0];
+    min = niz[0];
 
-    for(var i = 1; i < nizBrojeva.length; i++){
-        if(niz[i]<min){
+    for (var i = 1; i < nizBrojeva.length; i++) {
+        if (niz[i] < min) {
 
-            min= niz[i];
+            min = niz[i];
         }
 
     }
     return min;
 }
 
-var niz = [1,2,3];
+var niz = [1, 2, 3];
+
+//CH 4
+
+var nizStringova = ['Rade', 'Olivera', 'Petar', 'Obren'];
+var nizBrojeva = [1, 2, 3, 4, 5, 6];
+function reverseArr(niz){
+    returnArr = [];
+
+    var j = 0;
+    for(var i = niz.length - 1; i >= 0; i--){
+        //returnArr.push(niz[i]);
+        returnArr[j] = niz[i];
+        j++;
+    }
+
+    return returnArr;
+}
+
+var rez1 = reverseArr(nizStringova);
+var rez2 = reverseArr(nizBrojeva);
 
