@@ -39,3 +39,17 @@ console.log(test);
 
 //CH 4  Write a JavaScript program to swap the first and last elements 
 //of a given array of integers. The array length should be at least 1
+
+
+//CH 5 Prebrojavanje:
+//Napisati funkciju koja prima niz stringova, 
+//a vraca broj
+//pojavljivanja reci word
+// function countWordCode(arr, word){
+
+//}
+//var test = ['Code', 'Rade, 'Code', 'Mirko']
+//var res = countWordCode(test,'Rade');
+//console.log(res); //1
+//var res = countWordCode(test,'Code');
+//console.log(res); //2
