@@ -17,8 +17,7 @@ console.log(test);
 var test = "I'm global";
 
 function testScope() {
-  test = "I'm local";
-
+  var test = "I'm local";
   console.log(test);     
 }
 
@@ -27,7 +26,8 @@ testScope();
 console.log(test); 
 
 //CH 3 Prebrojavanje:
-//Napisati funkciju koja prima niz stringova, a vraca broj
+//Napisati funkciju koja prima niz stringova, 
+//a vraca broj
 //pojavljivanja reci "Code"
 // function countWordCode(arr){
 

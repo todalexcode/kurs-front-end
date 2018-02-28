@@ -111,3 +111,19 @@ var mike = {
 mike.calculateAge = john.calculateAge;
 mike.calculateAge();
 */
+
+var john = {
+    name: 'John',
+    yearOfBirth: 1990,
+    calculateAge: function() {
+        console.log('log from method: ' + this.name);
+        //console.log(2016 - this.yearOfBirth);
+        
+        function innerFunction() {
+            console.log('log from inner function: ' + this);
+        }
+        innerFunction();
+    }
+}
+
+console.log(john.calculateAge());
