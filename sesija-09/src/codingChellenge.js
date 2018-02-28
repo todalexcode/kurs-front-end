@@ -37,5 +37,5 @@ console.log(test);
 //console.log(res);
 
 
-//CH 3  Write a JavaScript program to swap the first and last elements 
+//CH 4  Write a JavaScript program to swap the first and last elements 
 //of a given array of integers. The array length should be at least 1
