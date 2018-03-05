@@ -71,3 +71,4 @@ var uppCase = recenica.toUpperCase();
 
 var lowerCase = recenica.toLocaleLowerCase();
 
+var stringSliceOnMDN = 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice';
