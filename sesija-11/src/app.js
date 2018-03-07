@@ -72,3 +72,37 @@ var uppCase = recenica.toUpperCase();
 var lowerCase = recenica.toLocaleLowerCase();
 
 var stringSliceOnMDN = 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice';
+
+var data ={
+    name: 'Rade', 
+    email: 'r_ostojic@hotmail.com'
+}
+
+function sendData(data) {
+    var XHR = new XMLHttpRequest();
+    var FD  = new FormData();
+  
+    // Push our data into our FormData object
+    for(name in data) {
+      FD.append(name, data[name]);
+    }
+  
+    // Define what happens on successful data submission
+    XHR.addEventListener('load', function(event) {
+      alert('Yeah! Data sent and response loaded.');
+    });
+  
+    // Define what happens in case of error
+    XHR.addEventListener('error', function(event) {
+      alert('Oups! Something went wrong.');
+    });
+  
+    // Set up our request
+    XHR.open('POST', 'https://send.pageclip.co/wf4047MiM7zfzwrtRaHjyye1agghoGH9');
+    XHR.setRequestHeader('Access-Control-Allow-Headers','X-REQMETHOD,X-REQTRANSPORT,X-HASFETCH,Content-Type');
+    XHR.setRequestHeader('Access-Control-Allow-Origin','*');
+    XHR.setRequestHeader('Origin','http://localhost:3000');
+    
+    // Send our FormData object; HTTP headers are set automatically
+    XHR.send(FD);
+  }
