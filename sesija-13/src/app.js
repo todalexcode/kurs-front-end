@@ -38,10 +38,10 @@ function checkGuess() {
         //if userGuess too low
         if (userGuess < randomNumber) {
             //infom the user - too low
-            lastResult.textContent = 'Premali broj ...';
+            lowOrHi.textContent = 'Premali broj ...';
         }else if(userGuess > randomNumber){
             //infom the user - too high
-            lastResult.textContent = 'Prevelik broj ...';
+            lowOrHi.textContent = 'Prevelik broj ...';
         }
     }
     //increment guesCount for 1
@@ -69,11 +69,19 @@ function resetGame() {
     guessCount = 1;
 
     //clear paragraphs
-
+    var resetParagraphs = document.querySelectorAll('.resultParas p');
+    for(var i = 0; i < resetParagraphs.length; i++){
+        resetParagraphs[i].textContent = '';
+    }
     //enable button and text...
+
+    guessField.disabled = false;
+    guessSubmit.disabled = false;
+    guessField.value = '';
+    guessField.focus();
     
-    resetButton.parrentNode.removeChild(resetButton);
-
+    lastResult.style.backgroundColor = 'transparent';
+  
     randomNumber = Math.floor(Math.random() * 100) + 1;
-
+    document.body.removeChild(resetButton);
 }
