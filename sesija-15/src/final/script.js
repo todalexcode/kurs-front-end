@@ -11,12 +11,53 @@ var Person = function(name, yearOfBirth, job) {
     this.name = name;
     this.yearOfBirth = yearOfBirth;
     this.job = job;
-}
+ }
 
-Person.prototype.calculateAge  = function() {
-    console.log(2016 - this.yearOfBirth);
+ Person.prototype.calculateAge  = function() {
+    return(2018 - this.yearOfBirth);
 };
 
+var cikaRade =  new Person('Cika Rade', 1966, 'Teacher');
+console.log(cikaRade.calculateAge());
+
+Person.prototype.isFullAge = function(){
+    if(this.calculateAge() >=18 ){
+        return true;
+    }
+    return false;
+}
+*/
+
+function interviewQuestion(job) {
+    if (job === 'designer') {
+        return function(name) {
+            console.log(name + ', can you please explain what UX design is?');
+        }
+    } else if (job === 'teacher') {
+        return function(name) {
+            console.log('What subject do you teach, ' + name + '?');
+        }
+    } else {
+        return function(name) {
+            console.log('Hello ' + name + ', what do you do?');
+        }
+    }
+}
+
+var test = interviewQuestion('teacher')('Cika Rade');
+
+//var nova = test('');
+
+console.log(test);
+
+
+
+
+/*
+
+*/
+
+/*
 Person.prototype.lastName = 'Smith';
 
 var john = new Person('John', 1990, 'teacher');
@@ -30,9 +71,9 @@ mark.calculateAge();
 console.log(john.lastName);
 console.log(jane.lastName);
 console.log(mark.lastName);
+
+
 */
-
-
 
 /////////////////////////////
 // Lecture: Object.create
