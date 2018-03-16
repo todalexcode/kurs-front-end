@@ -1,0 +1,5 @@
+Algoritmi
+Closures
+Shuffle niza nacin 1
+Shuffle niza nacin 2
+Coding challenge sa Closure-ima (marke automobila i zemlje prozivodnje)
