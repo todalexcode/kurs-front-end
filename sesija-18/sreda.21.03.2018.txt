@@ -1,1 +1,4 @@
-Manipuliacija DOM-om iz Javascripta
+DOM manipulacije
+CSS Flexbox layout
+Primeri
+Coding challenges

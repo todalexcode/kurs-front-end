@@ -1,3 +1,5 @@
-CSS Flexbox layout
-Primeri
-Coding challenges
+Ajax osnove - primeri
+Istorija www - request, response
+asynchronously vs synchronously
+Server side, client side
+JSON.parse
