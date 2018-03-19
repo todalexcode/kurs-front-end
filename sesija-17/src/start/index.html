@@ -9,10 +9,43 @@
     <h1>Table template</h1>
     <div class='controller'></div>
     <input type='number' id='number' value="10"> <br>
-    <input type="button" value="click for more" onclick="generate()">
+    <input type="button" id="button" value="click for more" >
     <div class='container' id='cont'>
 
     </div>
+
+    <table>
+        <colgroup>
+          <col style="background-color: yellow">
+          <col style="background-color: blue">
+          <col style="background-color: white">
+          <col style="background-color: green">
+        </colgroup>
+      <tr>
+            <th>Data 1</th>
+            <th>Data 2</th>
+            <th>Data 3</th>
+            <th>Data 4</th>
+      </tr>      
+      <tr>
+          <td>Ovo je TD11</td>
+          <td>Ovo je TD12</td>
+          <td>Ovo je TD13</td>
+          <td>Ova je besna</td>
+      </tr>
+      <tr>
+          <td colspan="4">Ivan je dobar decko</td>
+          <!-- <td colspan="2">Ovo je TD22 TD23 </td> -->
+          <!-- <td>Ovo je TD23</td> -->
+          <!-- <td>&nbsp;</td> -->
+      </tr>      
+      <tr>
+          <td>Ovo je TD21</td>
+          <td>Ovo je TD22</td>
+          <td>Ovo je TD33</td>
+          <td>&nbsp;</td>
+      </tr>            
+    </table>
 
     <script src='script.js'></script>
 

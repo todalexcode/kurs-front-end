@@ -46,9 +46,16 @@ function generate(){
         divContent = document.createElement("div");
         divContent.textContent = arr[i];
         console.log(divContent);
-        divContent.style.border = '1px';
+        divContent.style.border = '2px';
         divContent.style.borderStyle = 'solid';
-        divContent.style.margin = '10px';
+        divContent.style.margin = '50px';
         divContainer.appendChild(divContent);
     }
 }
+
+(function(){
+    var button = document.getElementById('button');
+    button.addEventListener('click', generate);
+   
+    
+})();
