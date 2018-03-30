@@ -8,7 +8,6 @@ body {
 
 header {
     background: purple;
-    height: 100px;
 }
 
 h1 {
@@ -24,11 +23,84 @@ article {
     background: aqua;
 }
 
-/* Add your flexbox CSS below here */
-/*
-
-section {
-  display: flex;
+#sidebar{
+    background: green;
 }
 
+footer {
+background: beige;
+}
+
+/* Add your flexbox CSS below here */
+
+nav{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#sidebar nav{
+    flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /*grid-template-rows: 1fr 2fr;*/
+    
+  grid-column-gap: 1px;
+  /*grid-row-gap: 1px;*/
+}
+
+#content {
+    display: flex;
+}
+
+nav a {
+    flex: 1;
+    margin: 2px;
+    padding: 10px 5px;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0f3fa+0,d8f0fc+50,b8e2f6+51,b6dffd+100;Shape+2+Style */
+    background: #e0f3fa; /* Old browsers */
+    background: -moz-linear-gradient(top, #e0f3fa 0%, #d8f0fc 50%, #b8e2f6 51%, #b6dffd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
+}
+
+/*
+article:nth-child(2n+0) {
+    flex: 2;
+}
+
+
 */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+} 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...} 
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    #sidebar{
+        display: none;
+    }
+
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+        #sidebar{
+        display: inline;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+
