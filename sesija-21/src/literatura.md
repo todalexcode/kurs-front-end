@@ -12,8 +12,16 @@
 * http://www.colorzilla.com/gradient-editor/
 
 # Fontovi i ikone
+
 * https://fonts.google.com
 * https://fontawesome.com/
 * https://useiconic.com/open/
 * http://glyph.smarticons.co/
 * https://material.io/icons/
+
+# Bootstrap framework
+
+* http://getbootstrap.com
+* http://getbootstrap.com/docs/4.0/examples/grid/ 
+* http://getbootstrap.com/docs/4.0/examples/jumbotron/
+* http://getbootstrap.com/docs/4.0/examples/starter-template/ 
