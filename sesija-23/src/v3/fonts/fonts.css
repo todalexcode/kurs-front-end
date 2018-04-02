@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'GEOGROTESQUE-BOLD';
+	src: url('../fonts/GEOGROTESQUE-BOLD.eot');
+	src: local('☺'), 
+        url('../fonts/GEOGROTESQUE-BOLD.woff') format('woff'), 
+        url('../fonts/GEOGROTESQUE-BOLD.ttf') format('truetype'), 
+        url('../fonts/GEOGROTESQUE-BOLD.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GEOGROTESQUE-MEDIUM';
+	src: url('../fonts/GEOGROTESQUE-MEDIUM.eot');
+	src: local('☺'), 
+        url('../fonts/GEOGROTESQUE-MEDIUM.woff') format('woff'), 
+        url('../fonts/GEOGROTESQUE-MEDIUM.ttf') format('truetype'), 
+        url('../fonts/GEOGROTESQUE-MEDIUM.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GEOGROTESQUE-REGULAR';
+	src: url('../fonts/GEOGROTESQUE-REGULAR.eot');
+	src: local('☺'), 
+        url('../fonts/GEOGROTESQUE-REGULAR.woff') format('woff'), 
+        url('../fonts/GEOGROTESQUE-REGULAR.ttf') format('truetype'), 
+        url('../fonts/GEOGROTESQUE-REGULAR.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GEOGROTESQUE-SEMIBOLD';
+	src: url('../fonts/GEOGROTESQUE-SEMIBOLD.eot');
+	src: local('☺'), 
+        url('../fonts/GEOGROTESQUE-SEMIBOLD.woff') format('woff'), 
+        url('../fonts/GEOGROTESQUE-SEMIBOLD.ttf') format('truetype'), 
+        url('../fonts/GEOGROTESQUE-SEMIBOLD.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

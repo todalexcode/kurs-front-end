@@ -1,0 +1,155 @@
+@import './fonts/fonts.css';
+
+/*
+    orange: rgb(232, 118, 6);
+    dark blue: rgb(1, 94, 171);
+    background: rgb(215, 232, 242);
+    gray: rgb(178, 178, 178);
+*/
+
+html {
+   color: rgb(1, 94, 171)
+}
+
+body{
+    font-family: GEOGROTESQUE-MEDIUM;
+    margin: 0;
+    padding: 0;
+    background: url('img/windmill.png') no-repeat bottom rgb(215, 232, 242);
+}
+.orange{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    background: rgb(232, 118, 6);
+    height: 80px;
+    top: 0;
+}
+.container {
+    width: 68%;
+    margin: 0 auto;
+}
+
+/* 
+
+HEADER
+
+*/
+
+header .logo {
+    float: left;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 180px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+header nav a {
+    flex-direction: row;
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-self: flex-end;
+    padding: 50px 10px 10px 10px;
+}
+header nav a:hover{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.2+0,0+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+header .breadcrumbs {
+    margin-left: 190px;
+    margin-bottom: 25px;
+}
+header .breadcrumbs a {
+    display: inline;
+    font-family: GEOGROTESQUE-REGULAR;
+    color: rgb(1, 94, 171);
+    padding-right: 15px;
+    text-decoration: none;
+}
+header .breadcrumbs a:after {
+    content: ">";
+    padding-left: 10px;
+}
+header .breadcrumbs a:last-child:after {
+    content: "";
+}
+
+/*
+
+BODY
+
+*/
+
+.page-content{
+    display: flex;
+}
+.main {
+    background: white;
+    display: flex;
+}
+.main article {
+    flex: 1 1 50em;
+    padding: 20px;
+}
+.main article p {
+    text-align: justify;
+}
+.main aside {
+    flex: 0 0 150px;
+}
+.aside-image {
+    max-width: 100%;
+}
+
+.sidebar {
+    flex: 0 0 180px;
+    padding: 0 15px;
+}
+
+.sidebar a{
+    display: block;
+    background: url("img/links.png") no-repeat top left;
+    background-size: contain;
+    height: 160px;
+    width: 160px;
+    font-family: GEOGROTESQUE-MEDIUM;
+    text-align: center;
+    text-decoration: none;
+    line-height: 160px;
+}
+.sidebar a:hover{
+    background: url("img/orange.png") no-repeat top left;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*
+
+FOOTER
+
+*/
+footer {
+    margin-top: 230px;
+    background: rgb(1, 94, 171);
+}
+footer > div{
+    width: 68%;
+    margin: 0 auto;
+    color: white;
+    padding: 25px 0;
+}
+footer nav {
+    display: inline;
+}
+footer nav a {
+    text-decoration: none;
+    color: white;
+}

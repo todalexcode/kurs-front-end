@@ -1,0 +1,64 @@
+@import './fonts/fonts.css';
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.model { 
+    background: url('./CaroCroc_Page2.jpg');
+    background-repeat: no-repeat;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.orange{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    background: orange;
+    height: 100px;
+    top: 0;
+}
+.page { }
+.container {
+    width: 68%;
+    margin: 0 auto;
+    display: flex;
+}
+header nav {
+    flex-direction: row;
+    margin-left: 50px;
+    display: flex;
+    width: 100%;
+    align-items: top;
+    justify-content: center;
+    height: 100px;
+}
+header nav a {
+    font-family: GEOGROTESQUE-MEDIUM;
+    flex-direction: row;
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    align-items: top;
+    padding-top: 65px;
+}
+header nav a:hover{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.2+0,0+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+
+
+
+
+
