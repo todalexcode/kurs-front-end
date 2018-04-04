@@ -1,0 +1,10 @@
+@import './open-iconic-bootstrap.min.css';
+
+.jumbotron {
+    background: #f20ed3;
+}
+
+/* #f20ed3 */
+.nasa-boja {
+    color: white;
+}
