@@ -39,3 +39,30 @@ var heroes = {
     }
   ]
 };
+
+/*
+var simpleObject = {
+  squadName : "Super hero squad",
+  homeTown : "Metro City",
+  formed : 2016,
+  getTown : function(){
+    return this.homeTown;
+  },
+  date : new Date(),
+  isSimple : true
+}
+
+var jsonRow = '{"name" : "John", "age": 30, "city": "New York"}';
+
+var jsonObjFromRow = JSON.parse(jsonRow);
+
+//console.log(jsonObjFromRow.name);
+
+
+console.log(simpleObject.getTown());
+var jsonObjectByMe = JSON.stringify(simpleObject);
+var objAgain = JSON.parse(jsonObjectByMe);
+
+
+console.log(objAgain.isSimple);
+*/
