@@ -1,12 +1,12 @@
 var heroes = {
-  "squadName" : "Super hero squad",
-  "homeTown" : "Metro City",
-  "formed" : 2016,
+  "squadName" : "Code.rs hero squad",
+  "homeTown" : "Novi Beograd",
+  "formed" : 2018,
   "secretBase" : "Super tower",
   "active" : true,
   "members" : [
     {
-      "name" : "Molecule Man",
+      "name" : "Ljubitelji JavaScripta",
       "age" : 29,
       "secretIdentity" : "Dan Jukes",
       "powers" : [
@@ -16,7 +16,7 @@ var heroes = {
       ]
     },
     {
-      "name" : "Madame Uppercut",
+      "name" : "CSS Masteri",
       "age" : 39,
       "secretIdentity" : "Jane Wilson",
       "powers" : [
@@ -26,7 +26,7 @@ var heroes = {
       ]
     },
     {
-      "name" : "Eternal Flame",
+      "name" : "HTML Eternal Flame",
       "age" : 1000000,
       "secretIdentity" : "Unknown",
       "powers" : [
@@ -34,7 +34,8 @@ var heroes = {
         "Heat Immunity",
         "Inferno",
         "Teleportation",
-        "Interdimensional travel"
+        "Interdimensional travel",
+        "Copy Paste Super Power"
       ]
     }
   ]
