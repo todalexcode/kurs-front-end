@@ -1,3 +1,27 @@
+body {
+    
+}
+
+input {
+  
+}
+
 h1 {
-    color: blue;
+   
+}
+
+.flex-container{
+    display: flex;
+}
+
+.poster {
+    margin: 10px;
+}
+
+.input-container{
+    display: flex;
+}
+
+.no-results{
+
 }
