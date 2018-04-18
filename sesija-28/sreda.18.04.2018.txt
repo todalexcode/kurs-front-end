@@ -1,3 +1,4 @@
 vezbe - gallery with a button
 
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Image_gallery
+AIzaSyAfdFhGyahFNqbjzL3mlVkKheNBWI67nEI
