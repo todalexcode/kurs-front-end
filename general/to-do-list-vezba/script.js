@@ -13,7 +13,7 @@ function addNewItem() {
 	// puts user's input into <span>
 	var spanex = document.createElement("span");
 	spanex.innerText = addInputToList;
-	spanex.setAttribute("class", "strikethrough")
+	spanex.setAttribute("class", "precrtano")
 		
 	listItem.appendChild(checkboksik);				// this line puts "checkbox" first in <li>
 	listItem.appendChild(spanex);					// this line puts user input after the checkbox in <li>
