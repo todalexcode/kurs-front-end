@@ -1,3 +1,7 @@
+//Zavrsiti primer kod kuce:
+//1. Naci bugove (pre svega handle-ovati brisanje iz modela!!!)
+//2. Promeniti code
+
 var model = (function () {
 	var items = [];
 	
@@ -6,10 +10,30 @@ var model = (function () {
 		this.done = false;
 	}
 
+	function isItemInArray(item){
+		var isFound = false;
+		
+		for(var i = 0; i < items.length; i ++){
+			if (item === items[i].ToDo){
+				isFound = true;
+			}
+		}
+		
+		return isFound;
+	}
+
 	return {
 		addNewItemToModel : function (text) {
 			var item = new ToDoItem(text);
-			items.push(item);
+			if(!isItemInArray(text)){
+				items.push(item);
+				return item;
+			}
+			else {
+				console.log('Sorry, ' + text + ' already exsist');
+				return -1;
+			}
+			
 		},
 		allToDoItems: function () {
 			return items;
@@ -113,9 +137,13 @@ var controller = (function (m, v) {
 		var newItem;
 		var input = v.getInput();
 		if (input.trim() !== ''){
-			newItem = v.addItemToView(input);
-			m.addNewItemToModel(input);
-			v.checkBoxChanged(input);
+			
+			var mNewItemm = m.addNewItemToModel(input);
+			console.log(mNewItemm);
+			if (mNewItemm !== -1){
+				newItem = v.addItemToView(input);
+				v.checkBoxChanged(input);
+			}
 		}
 	};
 
